@@ -1,0 +1,66 @@
+POST http://localhost:1000/api/employees
+Content-Type: application/json
+
+{
+    "firstName": "Justin",
+    "lastName": "Minh",
+    "extention": "Thanh",
+    "email": "minhthanh@gmail.com",
+    "officeCode": "2",
+    "reportsTo": "4",
+    "jobTitle": "Developer"
+}
+
+###
+POST http://localhost:1000/api/employees
+Content-Type: application/json
+
+{
+    "firstName": "The",
+    "lastName": "Weeknd",
+    "extention": "Foo",
+    "email": "theweeknd@gmail.com",
+    "officeCode": "1",
+    "reportsTo": "4",
+    "jobTitle": "Singer"
+}
+
+
+###
+POST http://localhost:1000/api/employees
+Content-Type: application/json
+
+{
+    "firstName": "Ariana",
+    "lastName": "Grande",
+    "extention": "De",
+    "email": "ariana@gmail.com",
+    "officeCode": "1",
+    "reportsTo": "4",
+    "jobTitle": "Singer"
+}
+
+
+### Get all customers
+GET http://localhost:1000/api/employees/
+
+
+### Get a customer by id
+GET http://localhost:1000/api/employees/1
+
+
+### Update customer
+PUT http://localhost:1000/api/employees/2
+Content-Type: application/json
+
+{
+    "jobTitle": "Rapper"
+}
+
+
+### Delete customer
+DELETE http://localhost:1000/api/employees/2
+
+
+### Get list customers of employee
+GET http://localhost:1000/api/employees/listCustomers/1

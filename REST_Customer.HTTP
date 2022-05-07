@@ -1,0 +1,79 @@
+POST http://localhost:1000/api/customers/
+Content-Type: application/json
+
+{
+    "customerName": "Justin Bieber",
+    "contactFirstName": "Justin",
+    "contactLastName": "Bieber",
+    "phone": "1234567",
+    "addressLine1": "123",
+    "addressLine2": "Main St",
+    "city": "Washington",
+    "state": "DC",
+    "postalCode": "20001",
+    "country": "USA",
+    "salesRepEmployeeNumber": 2,
+    "creditLimit": 10000
+}
+
+
+### Add Customer
+POST http://localhost:1000/api/customers/
+Content-Type: application/json
+
+{
+    "customerName": "Ariana Grande",
+    "contactFirstName": "Grande",
+    "contactLastName": "Ariana",
+    "phone": "3464567",
+    "addressLine1": "123",
+    "addressLine2": "Main St",
+    "city": "Kelling",
+    "state": "DC",
+    "postalCode": "20001",
+    "country": "USA",
+    "salesRepEmployeeNumber": 1,
+    "creditLimit": 10000
+}
+
+
+### Add a new customer
+POST http://localhost:1000/api/customers/
+Content-Type: application/json
+
+{
+    "customerName": "The Weeknd",
+    "contactFirstName": "The",
+    "contactLastName": "Weeknd",
+    "phone": "3757",
+    "addressLine1": "567",
+    "addressLine2": "Main St",
+    "city": "Itan",
+    "state": "DC",
+    "postalCode": "6457",
+    "country": "USA",
+    "salesRepEmployeeNumber": 1,
+    "creditLimit": 888
+}
+
+
+### Get all customers
+GET http://localhost:1000/api/customers/
+
+
+### Get a customer by id
+GET http://localhost:1000/api/customers/1
+
+
+### Update customer
+PUT http://localhost:1000/api/customers/2
+Content-Type: application/json
+
+{
+    "creditLimit": 100
+}
+
+
+### Delete customer
+DELETE http://localhost:1000/api/customers/3
+

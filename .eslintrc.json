@@ -1,0 +1,16 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        // tương thích với mọi ES versions
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "parser": "@babel/eslint-parser",
+    "rules": {}
+}
